@@ -1,0 +1,35 @@
+@import "base.less";
+ body {
+     padding: 0.75rem 0;
+}
+ #main {
+     .mui-table-view-cell {
+         padding: 0.15rem;
+         font-size: 0.18rem;
+         &.users {
+             font-size: 0.2rem;
+             padding: 0.19rem 0.15rem;
+             a {
+                 display: block;
+                 p {
+                     font-size: 0.18rem;
+                     line-height: 0.35rem;
+                }
+            }
+        }
+         &.btn-exit {
+             position: relative;
+             padding: 0.3rem 0.15rem;
+             button {
+                 font-size: 0.18rem;
+                 text-align: center;
+                 width: 80%;
+                 position: absolute;
+                 left: 50%;
+                 top: 50%;
+                 transform: translate(-50%,-50%);
+            }
+        }
+    }
+}
+ 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+</head>
+
+<body>
+    <ul id="OA_task_2" class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle mui-table">
+                <div class="mui-table-cell">
+                    左滑自动触发删除
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</body>
+<script src="lib/mui/js/mui.min.js"></script>
+<script>
+    var btnArray = ['确认', '取消'];
+    //第二个demo，向左拖拽后显示操作图标，释放后自动触发的业务逻辑
+    mui('#OA_task_2').on('slideleft', '.mui-table-view-cell', function (event) {
+        var elem = this;
+        mui.confirm('确认删除该条记录？', 'Hello MUI', btnArray, function (e) {
+            if (e.index == 0) {
+                elem.parentNode.removeChild(elem);
+            } else {
+                setTimeout(function () {
+                    mui.swipeoutClose(elem);
+                }, 0);
+            }
+        });
+    });
+</script>
+
+</html>

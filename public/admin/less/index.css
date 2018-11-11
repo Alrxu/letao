@@ -1,0 +1,207 @@
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 16px;
+}
+/* 样式重置 */
+* {
+  margin: 0px;
+  padding: 0px;
+  /*在移动端设置盒模型border-box 为了防止元素加边框或者padding出现水平滚动条*/
+  box-sizing: border-box;
+  /* 去除移动端按住元素的时候会出现高亮背景色 */
+  -webkit-tap-highlight-color: transparent;
+  /* 去掉所有移动端内边框 */
+  outline: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+}
+img {
+  /* 解决图片底部0.03rem的间隙 为了让图片的对齐方式和文本一致*/
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+.main-left {
+  height: 100%;
+  width: 180px;
+  background-color: #2f4050;
+}
+.main-left .logo {
+  text-align: center;
+  background-color: #243443;
+  padding: 30px 10px;
+}
+.main-left .logo a {
+  width: 140px;
+  height: 140px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #eee;
+  text-align: center;
+}
+.main-left .logo a img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.main-left .logo p {
+  color: #eee;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.main-left .content {
+  font-size: 15px;
+  margin-top: 30px;
+}
+.main-left .content > ul > li {
+  margin-top: 10px;
+  line-height: 50px;
+  text-align: center;
+  list-style: none;
+}
+.main-left .content > ul > li.active {
+  background-color: #243443;
+}
+.main-left .content > ul > li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+.main-left .content > ul > li a:hover {
+  text-decoration: none;
+  background-color: #243443;
+}
+.main-left .content > ul > li.category ul {
+  padding-left: 50px;
+}
+.main-left .content > ul > li.category ul li {
+  line-height: 40px;
+  margin-top: 5px;
+}
+.main-left .content > ul > li.category ul li.active {
+  background-color: #243443;
+}
+.main-left .content > ul > li.category ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+.main-left .content > ul > li.category ul li a:hover {
+  text-decoration: none;
+  background-color: #243443;
+}
+.main-right {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+.main-right .title {
+  padding: 10px;
+  height: 58px;
+  background-color: #fff;
+}
+.main-right .title .list-menu {
+  padding: 5px 10px;
+  background-color: #5cb85c;
+}
+.main-right .title .list-menu .fa-navicon {
+  color: #fff;
+}
+.main-right .title a {
+  display: block;
+  text-decoration: none;
+}
+.main-right .title .exit {
+  margin-right: 10px;
+}
+.main-right .content {
+  flex: 1;
+  background-color: #eee;
+  padding: 40px 20px;
+}
+.main-right .content .table {
+  background-color: #fff;
+}
+.main-right .content .table th {
+  line-height: 30px;
+}
+.main-right .content .table td {
+  line-height: 50px;
+}
+.main-right .content th,
+.main-right .content td {
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+}
+#main {
+  background-color: #eee;
+  height: 100%;
+  display: flex;
+}
+#main > .main-right {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+#main > .main-right .title {
+  padding: 10px;
+  height: 58px;
+  background-color: #fff;
+}
+#main > .main-right .title .list-menu {
+  padding: 5px 10px;
+  background-color: #5cb85c;
+}
+#main > .main-right .title .list-menu .fa-navicon {
+  color: #fff;
+}
+#main > .main-right .title a {
+  display: block;
+  text-decoration: none;
+}
+#main > .main-right .title .exit {
+  margin-right: 10px;
+}
+#main > .main-right .content {
+  flex: 1;
+  background-color: #fff;
+  margin: 40px 20px;
+}
+#main > .main-right .content .table {
+  background-color: #fff;
+}
+#main > .main-right .content .table th {
+  line-height: 30px;
+}
+#main > .main-right .content .table td {
+  line-height: 50px;
+}
+#main > .main-right .content th,
+#main > .main-right .content td {
+  text-align: center;
+}

@@ -1,0 +1,79 @@
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 16px;
+}
+/* 样式重置 */
+* {
+  margin: 0px;
+  padding: 0px;
+  /*在移动端设置盒模型border-box 为了防止元素加边框或者padding出现水平滚动条*/
+  box-sizing: border-box;
+  /* 去除移动端按住元素的时候会出现高亮背景色 */
+  -webkit-tap-highlight-color: transparent;
+  /* 去掉所有移动端内边框 */
+  outline: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+}
+img {
+  /* 解决图片底部0.03rem的间隙 为了让图片的对齐方式和文本一致*/
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #2f4050;
+}
+#main {
+  height: 100%;
+  position: relative;
+}
+#main form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 340px;
+  background-color: #fff;
+  padding: 100px 30px;
+}
+#main form .login {
+  text-align: center;
+}
+#main form .btn-login {
+  width: 100%;
+}
+#main .logo {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+#main .logo img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}

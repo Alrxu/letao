@@ -1,0 +1,212 @@
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 0.16rem;
+}
+/* 样式重置 */
+* {
+  margin: 0rem;
+  padding: 0rem;
+  /*在移动端设置盒模型border-box 为了防止元素加边框或者padding出现水平滚动条*/
+  box-sizing: border-box;
+  /* 去除移动端按住元素的时候会出现高亮背景色 */
+  -webkit-tap-highlight-color: transparent;
+  /* 去掉所有移动端内边框 */
+  outline: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+}
+img {
+  /* 解决图片底部0.03rem的间隙 为了让图片的对齐方式和文本一致*/
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+#header {
+  position: fixed;
+  top: 0;
+  max-width: 7.5rem;
+  width: 100%;
+  height: 0.75rem;
+  background-color: #006699;
+  text-align: center;
+  z-index: 999;
+  padding: 0 0.75rem;
+  padding: 0.1rem;
+}
+#header h4 {
+  font-size: 0.3rem;
+  color: #fff;
+  height: 100%;
+  line-height: 0.75rem;
+  font-weight: normal;
+}
+#header .fa {
+  display: block;
+  width: 0.75rem;
+  height: 100%;
+  position: absolute;
+  color: #fff;
+  font-size: 0.3rem;
+  top: 0rem;
+  text-align: center;
+  line-height: 0.75rem;
+}
+#header .fa-search,
+#header .fa-home,
+#header .fa-refresh {
+  right: 0rem;
+}
+#header .fa-arrow-left {
+  left: 0rem;
+}
+#header form {
+  width: 100%;
+  margin-top: 0.1rem;
+}
+#header form input {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 0.1rem;
+}
+#header #footer {
+  position: fixed;
+  bottom: 0;
+  max-width: 7.5rem;
+  width: 100%;
+  height: 0.75rem;
+  background-color: #006699;
+  z-index: 999;
+}
+#header #footer a {
+  float: left;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  margin-top: 0.1rem;
+}
+#header #footer a .fa {
+  font-size: 0.33rem;
+  color: #fff;
+}
+#header #footer a p {
+  font-size: 0.18rem;
+  color: #fff;
+  line-height: 0.28rem;
+}
+#header .mui-col-xs-6 {
+  padding: 0.05rem;
+  text-align: center;
+  position: relative;
+}
+#header .mui-col-xs-6 a {
+  padding: 0 0.04rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+#header .mui-col-xs-6 a img {
+  width: 100%;
+  height: 100%;
+}
+#header .mui-col-xs-6 .pro-name {
+  font-size: 0.2rem;
+  line-height: 0.27rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#header .mui-col-xs-6 .price {
+  font-size: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+#header .mui-col-xs-6 .price .mon {
+  color: #f00;
+}
+#header .mui-col-xs-6 .price del {
+  color: #ccc;
+}
+#header .mui-col-xs-6 .buy {
+  display: block;
+  color: #fff;
+  background-color: #006699;
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  width: 1rem;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.1rem;
+}
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+body {
+  padding: 0.75rem 0;
+  background-color: #fff;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+}
+#main .mui-scroll-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+#main .mui-scroll-wrapper .mui-scroll {
+  height: auto;
+}
+#main #search {
+  padding: 0 0.15rem;
+  margin-top: 0.15rem;
+}
+#main #search form {
+  display: flex;
+}
+#main #search form input {
+  flex: 1;
+  height: 0.5rem;
+  border: 1px solid #006699;
+  border-radius: 0.06rem 0rem 0rem 0.06rem;
+}
+#main #search form a {
+  display: block;
+  text-align: center;
+  line-height: 0.5rem;
+  width: 0.98rem;
+  height: 0.5rem;
+  color: #fff;
+  font-size: 0.24rem;
+  background-color: #006699;
+  border: 1px solid #006699;
+  border-radius: 0rem 0.06rem 0.06rem 0rem;
+}
+#main #nav {
+  background-color: #eee;
+}
+#main #nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: 0.2rem;
+}

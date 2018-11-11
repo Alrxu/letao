@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入mui的css文件 -->
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <!-- 引入fontawesome 的css文件 -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.min.css">
+    <!-- 引入 主页的less 文件 -->
+    <link rel="stylesheet/less" href="less/login.less">
+    <!-- 引入less.js 编译器文件 -->
+    <script src="lib/less/less.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="javascript:history.back();" class="fa fa-arrow-left"></a>
+        <h4>登录中心</h4>
+    </header>
+    <main id="main">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>用户名</label>
+                <input type="text" class="mui-input-clear username" placeholder="请输入用户名">
+            </div>
+            <div class="mui-input-row">
+                <label>密码</label>
+                <input type="password" class="mui-input-password password" placeholder="请输入密码">
+            </div>
+            <div class="mui-button-row">
+                <button type="button" class="mui-btn mui-btn-primary login">登录</button>
+                <button type="button" class="mui-btn mui-btn-danger regist">免费注册</button>
+            </div>
+        </form>
+    </main>
+    <footer id="footer">
+        <a href="index.html">
+            <i class="fa fa-home"></i>
+            <p>首页</p>
+        </a>
+        <a href="category.html">
+            <i class="fa fa-bars"></i>
+            <p>分类</p>
+        </a>
+        <a href="cart.html">
+            <i class="fa fa-shopping-cart"></i>
+            <p>购物车</p>
+        </a>
+        <a href="user.html">
+            <i class="fa fa-user"></i>
+            <p>会员中心</p>
+        </a>
+    </footer>
+
+</body>
+<!--  引入zepto.js文件 -->
+<script src="lib/zepto/zepto.min.js"></script>
+<!-- 引入mui.js文件 -->
+<script src="lib/mui/js/mui.min.js"></script>
+<!-- 引入模板引擎的js文件 -->
+<script src="lib/artTemplate/template-web.js"></script>
+<!-- 引入自己写的js文件 -->
+<script src="js/login.js"></script>
+
+</html>

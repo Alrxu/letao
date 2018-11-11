@@ -1,0 +1,65 @@
+@import "base.less";
+ html, body {
+     height: 100%;
+}
+ body {
+     padding: 0.75rem 0;
+}
+ #main {
+     height: 100%;
+     background-color: #fff;
+     padding: 0.2rem;
+     form {
+         display: flex;
+         input {
+             flex: 1;
+             height: 0.5rem;
+             border: 1px solid @main-color;
+             border-radius: 0.06rem 0rem 0rem 0.06rem;
+        }
+         a {
+             display: block;
+             text-align: center;
+             line-height: 0.5rem;
+             width: 0.98rem;
+             height: 0.5rem;
+             color: #fff;
+             font-size: 0.24rem;
+             background-color: @main-color;
+             border: 1px solid @main-color;
+             border-radius: 0rem 0.06rem 0.06rem 0rem;
+        }
+    }
+     p {
+         margin: 0.2rem 0;
+         font-size: 0.22rem;
+         color: #ccc;
+         .search {
+             color: #000;
+        }
+    }
+     ul {
+         border: 1px solid #ccc;
+         border-radius: 0.06rem;
+         li {
+             padding: 0.04rem 0.1rem;
+             line-height: 0.53rem;
+             font-size: 0.23rem;
+             position: relative;
+             &+li {
+                 border-top: 0.01rem solid #ccc;
+            }
+             a {
+                 display: block;
+                 width: 100%;
+                 height: 100%;
+            }
+             span {
+                 position: absolute;
+                 top: 0.16rem;
+                 right: 0.16rem;
+            }
+        }
+    }
+}
+ 
